@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 50px 400px;
+        }
+        #flower{
+            height: 600px;
+            width: 600px;
+            background-color: aquamarine;
+        }
+        #f1,#f2,#f3,#f4,#f5{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 0, 106);
+            border: 1px solid black;
+            border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 150px;
+            left: 520px;
+        }
+        #box{
+            height: 200px;
+            width: 150px;
+            background-color: rgb(6, 236, 6);
+            position: absolute;
+            top: 430px;
+            left: 595px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        #f1{
+            animation-name: f1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes f1 {
+        0%{
+            transform: rotate(225deg);
+        
+        }
+        50%{
+            transform: rotate(200deg);
+            position: absolute;
+            left: 400px;
+        }
+        100%{
+            transform: rotate(225deg);
+        }
+        }
+        #f2{
+            animation-name: f2;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes f2 {
+        0%{
+            transform: rotate(225deg);
+        }
+        50%{
+            transform: rotate(215deg);
+            position: absolute;
+            /* top: 130px; */
+            left: 450px;
+        }
+        100%{
+            transform: rotate(225deg);
+        }
+        }
+        #f3{
+            animation-name: f3;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes f3 {
+        0%{
+            transform: rotate(45deg);
+        }
+        50%{
+            transform: rotate(60deg);
+            position: absolute;
+            left: 600px;
+        }
+        100%{
+            transform: rotate(45deg);
+        }
+        }
+        #f4{
+            animation-name: f4;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes f4 {
+        0%{
+            transform: rotate(45deg);
+        }
+        50%{
+            transform: rotate(70deg);
+            position: absolute;
+            left: 650px;
+        }
+        100%{
+            transform: rotate(45deg);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="flower">
+        <div id="f1"></div>
+        <div id="f4"></div>
+        <div id="f2"></div>
+        <div id="f3"></div>
+        <div id="f5"></div>
+        <div id="box"></div>
+    </div>
+</body>
+</html>
